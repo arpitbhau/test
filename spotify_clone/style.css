@@ -1,0 +1,229 @@
+/* Jai Shree Ram */
+
+@font-face {
+    font-family: jolly;
+    src: url(./img/GothamLight.ttf);
+}
+
+
+@font-face {
+    font-family: jollyMedium;
+    src: url(./img/GothamMedium.ttf);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: jollyMedium;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.relative {
+    position: relative;
+}
+
+.allCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background: #000;
+}
+
+.back {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+.nav {
+    top: -.7%;
+    width: 100%;
+    padding: 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nLeft .logo {
+    width: 35%;
+}
+
+.nMid {
+    position: relative;
+    left: 5%;
+    width: 40%;
+    gap: 10px;
+}
+
+.nMid .homeBtn {
+    width: 55px;
+    height: 55px;
+    background: #282828;
+    border-radius: 50%;
+}
+
+.homeBtn img {
+    opacity: .6;
+    width: 55%;
+    transition: .2s opacity cubic-bezier(0.005, 0.62, 0.75, 1);
+
+}
+
+.search {
+    background: #282828;
+    width: 75%;
+    height: 6.6vh;
+    padding: 0 16px;
+    border-radius: 60px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+
+.sGlass {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.sGlass img {
+    opacity: .6;
+    width: 10.3%;
+    transition: .2s opacity cubic-bezier(0.005, 0.62, 0.75, 1);
+
+}
+
+.searchBar {
+    position: absolute;
+    left: 12%;
+    height: 9vh;
+}
+
+.searchBar input {
+    font-family: jolly;
+    background: none;
+    border: none;
+    outline: none;
+    height: 100%;
+    font-size: 20px;
+    font-weight: 900;
+    width: 200%;
+}
+
+.searchBar input::placeholder {
+    font-family: jollyMedium;
+    letter-spacing: -.08vw;
+    font-weight: 100;
+    transition: .2s opacity cubic-bezier(0.005, 0.62, 0.75, 1);
+}
+
+.market {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: -48%;
+    border-left: 2px solid #ffffff4b;
+    padding-left: 20px;
+}
+
+.market img {
+    opacity: .6;
+    width: 10.3%;
+    transition: .2s opacity cubic-bezier(0.005, 0.62, 0.75, 1);
+
+}
+
+.homeBtn :hover,
+.sGlass :hover,
+.market :hover {
+    opacity: 1;
+    transition: .2s opacity cubic-bezier(0.005, 0.62, 0.75, 1);
+    cursor: pointer;
+}
+
+.nRight {
+    width: 23%;
+    height: 10vh;
+    position: relative;
+    left: -2.1%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nRight .explore {
+    width: fit-content;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    width: fit-content;
+    padding: 10px 18px;
+    color: #000;
+    border-radius: 50px;
+    font-weight: 600;
+    letter-spacing: .1px;
+}
+
+
+.nRight .install {
+    background: red;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    padding: 10px 0px;
+    border-radius: 50px;
+    font-weight: 600;
+    letter-spacing: .1px;
+    left: 20%;
+}
+
+.installImg {
+    position: absolute;
+    top: 50%;
+    left: 12%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.installImg img {
+    width: 10%;
+}
+
+.installText{
+    position: absolute;
+    left: 55%;
+    font-size: large;
+    transform: translateY(-50%);
+}
+
+.bell{
+    position: absolute;
+    left: 90%;
+}
+
+.bell img{
+    /* width: 10%; */
+}
